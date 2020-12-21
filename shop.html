@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Shop MTG products at a great price">
+  <meta name="author" content="Mark Curran">
+  <title>Registration Form Lab 5</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom-min.css" rel="stylesheet">    
+</head>
+<body  class="bg-dark">
+<main class="container">
+     
+    
+<nav role="navigation" class="navbar navbar-expand-lg navbar-light bg-secondary sticky-top loginStyle">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html">Home<span class="sr-only">(current)</span> </a>
+      <a class="nav-item nav-link" href="contact.html">Contact</a>
+      <a class="nav-item nav-link active" href="shop.html">Shop</a>
+    </div>
+  </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-dark"  id="loginlogout" href="#">Login</button>
+    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+      <a class="dropdown-item" href="userdetails.html">User Details</a>
+
+    </div>
+    </div>
+      
+    <div class="btn-toolbar">
+        <a class="nav-item nav-link" href="checkout.html">
+        <button type="button" class="btn btn-secondary ml-2">
+          Checkout <span class="badge badge-light" id="checkout"></span>
+        </button>
+        </a>
+    </div> 
+</nav>   
+    
+<h1 class="text-white">Shop</h1>
+    <h5 class="subheading">Shop the newest decks and booster packs at a competitive price.</h5>
+
+    <h2 class="text-white mt-4">Hot Products</h2>
+<div class="card-group jumboDesc">
+    
+    <div class="card bg-secondary m-2 rounded col-sm">
+  <img class="card-img-top bg-secondary p-1" src="images/booster.jpg" alt="Core 2021 Boosters">
+  <div class="card-body bg-secondary text-white">
+      <h5 class="card-title text-white">Core 2021 Boosters</h5>
+    <p class="card-text text-white">Sixteen cards, a land, one rare or mythic rare. Get yours now!</p>
+  </div>
+                <div>
+                 <ul class="list-group list-group-flush bg-secondary">
+    <li class="list-group-item text-white bg-secondary">€3.99</li>
+                     <li class="list-group-item bg-secondary">   
+                    <a href="#" id="product1" onclick='AddProduct1()' class="btn btn-primary addtocart text-white">Add to Cart</a>
+</li>
+  </ul>
+                </div>
+            </div>
+    
+    <div class="card bg-secondary m-2 rounded col-sm">
+  <img class="card-img-top bg-secondary p-1" src="images/chall_deck.jpg" alt="Challenger deck">
+  <div class="card-body bg-secondary text-white">
+      <h5 class="card-title text-white">Final Adventure</h5>
+    <p class="card-text text-white">This Golgari Challenger deck will stand up to any deck in standard you may face.</p>
+  </div>
+                <div>
+                 <ul class="list-group list-group-flush bg-secondary">
+    <li class="list-group-item text-white bg-secondary">€24.99</li>
+                     <li class="list-group-item bg-secondary">   
+                    <a href="#" onclick='AddProduct2()' class="btn btn-primary addtocart text-white">Add to Cart</a>
+</li>
+  </ul>
+                </div>
+            </div>
+    
+    <div class="card bg-secondary m-2 rounded col-sm">
+  <img class="card-img-top bg-secondary p-1" src="images/command_deck.jpg" alt="Commander Deck">
+  <div class="card-body bg-secondary text-white">
+      <h5 class="card-title text-white">Timeless Wisdom</h5>
+    <p class="card-text text-white">Blue, Red, White. Get your commander deck at an afforable price.</p>
+  </div>
+                <div>
+                 <ul class="list-group list-group-flush bg-secondary">
+    <li class="list-group-item text-white bg-secondary">€40.00</li>
+                     <li class="list-group-item bg-secondary">   
+                    <a href="#" onclick='AddProduct3()' class="btn btn-primary addtocart text-white">Add to Cart</a>
+</li>
+  </ul>
+                </div>
+            </div>
+    
+    
+  </div>
+    
+        <h2 class="text-white mt-4">All Products</h2>
+    <div class="card-group">
+        <div class="row">
+            
+    <div class="card bg-secondary m-2 rounded col-sm">
+  <img class="card-img-top bg-secondary p-1" src="images/basri-deck.jpg" alt="Basri Deck">
+  <div class="card-body bg-secondary text-white">
+      <h5 class="card-title text-white">Basri Planeswalker</h5>
+    <p class="card-text text-white">New to Magic? Get started with this prebuilt planeswalker deck!</p>
+  </div>
+                <div>
+                 <ul class="list-group list-group-flush bg-secondary">
+    <li class="list-group-item text-white bg-secondary">€13.99</li>
+                     <li class="list-group-item bg-secondary">   
+                    <a href="#" class="btn btn-primary addtocart text-white">Add to Cart</a>
+</li>
+  </ul>
+                </div>
+            </div>
+    
+    <div class="card bg-secondary m-2 rounded col-sm">
+  <img class="card-img-top bg-secondary p-1" src="images/core-set.jpg" alt="Core 2021">
+  <div class="card-body bg-secondary text-white">
+      <h5 class="card-title text-white">Core 2021 Bundle</h5>
+    <p class="card-text text-white">Get ready for Magic in the New Year, pick up your bundle today!.</p>
+  </div>
+                <div>
+                 <ul class="list-group list-group-flush bg-secondary">
+    <li class="list-group-item text-white bg-secondary">€40.00</li>
+                     <li class="list-group-item bg-secondary">   
+                    <a href="#" class="btn btn-primary addtocart text-white">Add to Cart</a>
+</li>
+  </ul>
+                </div>
+            </div>
+    
+    <div class="card bg-secondary m-2 rounded col-sm">
+  <img class="card-img-top bg-secondary p-1" src="images/duel.jpg" alt="Duel deck">
+  <div class="card-body bg-secondary text-white">
+      <h5 class="card-title text-white">Nissa Vs Ob Nixilis Duel</h5>
+    <p class="card-text text-white">Nissa Vs Ob Nixilis, two decks for a good price, pitted against one another. Which planeswalker will come out victorious?</p>
+  </div>
+                <div>
+                 <ul class="list-group list-group-flush bg-secondary">
+    <li class="list-group-item text-white bg-secondary">€40.00</li>
+                     <li class="list-group-item bg-secondary">   
+                    <a href="#" class="btn btn-primary addtocart text-white">Add to Cart</a>
+</li>
+  </ul>
+                </div>
+            </div>
+        
+        </div>
+        
+         <div class="row">
+             
+    <div class="card bg-secondary m-2 rounded col-md">
+  <img class="card-img-top bg-secondary p-1" src="images/ikoria.jpg" alt="Ikoria Boosters Boosters">
+  <div class="card-body bg-secondary text-white">
+      <h5 class="card-title text-white">Ikoria Boosters</h5>
+    <p class="card-text text-white">The Lair of Behemoths. What monsters will you find there? What will you create?</p>
+  </div>
+                <div>
+                 <ul class="list-group list-group-flush bg-secondary">
+    <li class="list-group-item text-white bg-secondary">€2.99</li>
+                     <li class="list-group-item bg-secondary">   
+                    <a href="#" class="btn btn-primary addtocart text-white">Add to Cart</a>
+</li>
+  </ul>
+                </div>
+            </div>
+    
+    <div class="card bg-secondary m-2 rounded col-md">
+  <img class="card-img-top bg-secondary p-1" src="images/liliana-deck.jpg" alt="Liliana deck">
+  <div class="card-body bg-secondary text-white">
+      <h5 class="card-title text-white">Liliana Planeswalker</h5>
+    <p class="card-text text-white">Summon Liliana's deadly horde. Use the graveyard to your advantage and decimate the opposition</p>
+  </div>
+                <div>
+                 <ul class="list-group list-group-flush bg-secondary">
+    <li class="list-group-item text-white bg-secondary">€16.99</li>
+                     <li class="list-group-item bg-secondary">   
+                    <a href="#" class="btn btn-primary addtocart text-white">Add to Cart</a>
+</li>
+  </ul>
+                </div>
+            </div>
+    
+    <div class="card bg-secondary m-2 rounded col-md">
+  <img class="card-img-top bg-secondary p-1" src="images/playmat.jpg" alt="Playmat">
+  <div class="card-body bg-secondary text-white">
+      <h5 class="card-title text-white">Ikoria Playmat</h5>
+    <p class="card-text text-white">Enter the battlefield in style with this Ikoria: Lair of Behemoths Playmat.</p>
+  </div>
+                <div>
+                 <ul class="list-group list-group-flush bg-secondary">
+    <li class="list-group-item text-white bg-secondary">€40.00</li>
+                     <li class="list-group-item bg-secondary">   
+                    <a href="#" class="btn btn-primary addtocart text-white">Add to Cart</a>
+</li>
+  </ul>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+  
+</main>
+<script src="js/jquery-min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>    
+<script src="custom-js/custom-min.js"></script>   
+
+
+</body>
+</html>

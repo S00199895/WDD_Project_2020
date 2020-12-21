@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Home to competitively priced Magic: The Gathering products">
+  <meta name="author" content="Mark Curran">
+  <title>Registration Form Lab 5</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom-min.css" rel="stylesheet">    
+</head>
+<body  class="bg-dark">
+<main class="container">
+     
+    
+<nav role="navigation" class="navbar navbar-expand-lg navbar-light bg-secondary sticky-top loginStyle">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span> </a>
+      <a class="nav-item nav-link" href="contact.html">Contact</a>
+      <a class="nav-item nav-link " href="shop.html">Shop</a>
+    </div>
+  </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-dark"  id="loginlogout" href="#">Login</button>
+    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+      <a class="dropdown-item" href="userdetails.html">User Details</a>
+
+    </div>
+    </div>
+      
+    <div class="btn-toolbar">
+        <a class="nav-item nav-link" href="checkout.html">
+        <button type="button" class="btn btn-secondary ml-2">
+          Checkout <span class="badge badge-light" id="checkout"></span>
+        </button>
+        </a>
+    </div> 
+</nav>    
+        
+    <div class="page-heading"></div>
+        <h1 role="heading" class="text-white">Welcome</h1>
+    <h5 class="subheading jumboDesc">Get the newest and cheapest Magic: The Gathering products here!</h5>
+    
+    <div role="banner" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="shop.html">
+            <img class="d-block w-100" src="images/slide1_carousel.jpg" alt="First slide">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+    <h3 role="heading">MTG Shop</h3>
+    <p>Shop the newest magic cards at an affordable price</p>
+  </div>
+        </div>
+        <div class="carousel-item">
+            <a href="login.html">
+            <img class="d-block w-100" src="images/slide2_carousel.jpg" alt="Second slide">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+    <h3>Login</h3>
+    <p>Login/Register with us for updates on new products and deals</p>
+  </div>
+        </div>
+        <div class="carousel-item">
+            <a href="contact.html">
+            <img class="d-block w-100" src="images/slide3_carousel.jpg" alt="Third slide">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+    <h3>Contact Page</h3>
+    <p>Send us our feedback on our contact page so we can continue to improve our site</p>
+  </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+    
+    <div role="article" class="newsDiv" class="container bg-secondary">
+        <h2 class="p-3 text-white">News</h2>
+        
+        <div class="jumbotron p-10 newsJum bg-dark" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(images/shop-preview.png)">
+  <h2 class="display-3">New Arrivals!</h2>
+  <p class="lead jumboDesc">Just in, we have the newest challenger decks and Commander decks for sale on our shop page!</p>
+  <p class="lead">
+    <a class="btn btn-info btn-lg" href="shop.html #newArrivals" role="button">Shop new arrivals</a>
+  </p>
+</div>
+    </div>
+        
+        <div role="article" class="jumbotron p-5 newsJum">
+  <h2 class="display-3">New set: Zendikar Rising</h2>
+  <p class="lead jumboDesc">Zendikar calls. A quest awaits. So gather your adventuring party and prepare for perilous challenges and priceless rewards.</p>
+            <h3 class="display-4">Card Highlights</h3>
+            <div class="container">
+            <div class="row p-1 text-center">
+    <div class="col-sm p-2 highlightBox">
+      <img class="figure-img" src="images/highlight1.png">
+        <figcaption class="figure-caption">Creatures in your party</figcaption>
+    </div>
+    <div class="col-sm p-2 highlightBox">
+      <img src="images/highlight2.png">       
+      <figcaption class="figure-caption">Landfall is back!</figcaption>
+
+    </div>
+    <div class="col-sm p-2 highlightBox">
+      <img src="images/highlight3.png">
+      <figcaption class="figure-caption">Kicker returns</figcaption>
+    </div>
+  </div>
+            </div>
+</div>
+    
+        <div role="article" class="jumbotron p-5 newsJum">
+  <h2 class="display-3 jumboDesc">Wizards of The Coast Response to Covid-19</h2>
+            
+            
+<div id="accordion">
+  <div class="card bg-secondary">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-lg text-white-50" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Community Support
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body text-white">
+        The Wizards Play Network plays a vital role as local hubs that connect our global community around the table each week. As the global health crisis continues, many stores are feeling economic strain and impact, as well as the psychological toll that social distancing is having on their community of players. Wizards of the Coast is committed to finding creative solutions to help lessen the burden on our stores and players around the world, you can read more about the steps we’re taking for retailers.
+      </div>
+    </div>
+  </div>
+  <div class="card bg-secondary">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-lg text-white-50 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Rescheduled events
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item-dark p-1">March 12: Changes to Magic's competitive season and event schedule</li>
+              <li class="list-group-item-dark p-1">March 18: Changes to Qualifier for Players Tour Series 2 Events &amp; Schedules</li>
+              <li class="list-group-item-dark p-1">March 18: WPN Qualifiers Suspended</li>
+              <li class="list-group-item-dark p-1">March 26: Changes to the Release of Ikoria: Lair of Behemoths</li>
+              <li class="list-group-item-dark p-1">March 31: Esports Update: MPL, Rivals, and Competitor 2020 Partial Season Changes</li>
+              <li class="list-group-item-dark p-1">April 20: Jumpstart Release Shifts to July 17</li>
+              <li class="list-group-item-dark p-1">June 4: Promo and Product Shipping Delays</li>
+              <li class="list-group-item-dark p-1">June 15: Product Delays in North America</li>
+              <li class="list-group-item-dark p-1">August 5: Regional Delays for Double Masters Promos</li>
+              <li class="list-group-item-dark p-1">September 9: Production Updates (Updated Sept 17)</li>
+              <li class="list-group-item-dark p-1">October 2: Commander Legends Global Release Moved to November 20, 2020</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-secondary">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-lg text-white-50 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Stay at Home
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body text-white">
+        With health and safety as our top priority, we also are working to limit the disruptions to our games and play patterns across all of our franchises. This includes delivering on our current Dungeons &amp; Dragons adventure, altering our policies on Magic: The Gathering pre-release events for Ikoria: Lair of the Behemoths, and transitioning many organized play opportunities to online. You can read more about our individual efforts on each title below.
+      </div>
+    </div>
+  </div>
+</div>
+            
+</div>
+    
+</main>
+<script src="js/jquery-min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>    
+<script src="custom-js/custom-min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
+
+
+</body>
+</html>

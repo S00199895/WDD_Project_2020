@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Checkout page">
+  <meta name="author" content="Mark Curran">
+  <title>Registration Form Lab 5</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom-min.css" rel="stylesheet">    
+</head>
+<body class="bg-dark">
+<main class="container p-1">
+
+<nav role="navigation" class="navbar navbar-expand-lg navbar-light bg-secondary sticky-top loginStyle">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html">Home<span class="sr-only">(current)</span> </a>
+      <a class="nav-item nav-link" href="contact.html">Contact</a>
+      <a class="nav-item nav-link" href="shop.html">Shop</a>
+    </div>
+  </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-dark"  id="loginlogout" href="#">Login</button>
+    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+      <a class="dropdown-item" href="userdetails.html">User Details</a>
+
+    </div>
+    </div>
+      
+    <div class="btn-toolbar">
+        <a class="nav-item nav-link" href="checkout.html">
+        <button type="button" class="btn btn-secondary ml-2">
+          Checkout <span class="badge badge-light" id="checkout"></span>
+        </button>
+        </a>
+    </div> 
+</nav>      
+    
+    <h1 role="heading" class="text-white jumboDesc">Checkout</h1>
+    <h2 role="button" class=" btn btn-secondary w-50 mx-auto p-2 m-3" onclick="ShowBasket()">Show basket</h2>
+    <div class="card bg-secondary col-5" id="itemsContainer">
+    </div>
+    <div class="row">    
+        <div class="col-sm col-md-8"> 
+          <form name="paymentdetails" class="text-white" id="pdetails" action="" method="get">
+              <div class="container">
+                <fieldset>
+                    <legend class="jumboDesc">Delivery Details</legend>
+                    <div class="row">
+                    <div class="form-group col-6">
+                        <label for="getFirstName">First name</label>
+                        <input aria-label='First name' type="text" class="form-control" id="getFirstName" name="firstname" value="" required>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="getLastName">Last name</label> 
+                        <input aria-label='Last name' type="text" class="form-control" id="getLastName" name="lastname" value="" required>
+                    </div>    
+                    </div>
+                    <div class="form-group">
+                        <label for="getAddress1">Addresss</label> 
+                        <input aria-label='address1' type="text" class="form-control" id="getAddress1" name="address2" value="address 1" required>
+                    </div> 
+                    <div class="form-group">
+                        <label for="getAddress2">Addresss</label> 
+                        <input type="text" class="form-control" id="getAddress2" name="address2"  value="address 2">
+                    </div> 
+                        <div class="form-group">
+                        <label for="getAddress3">Addresss</label> 
+                        <input type="text" class="form-control" id="getAddress3" name="address3"  value="address 3"  required>
+                    </div> 
+                </fieldset>    
+                <fieldset>
+                    <legend class="jumboDesc">Payment Details</legend>
+                    <div class="form-group">
+                        <label for="getCardName">Name on Card</label> 
+                        <input type="text" class="form-control" id="getCardName" name="cardname" value="MR FIRSTNAME SURNAME" required>
+                    </div>   
+                    <div class="row">
+                    <div class="form-group col-8">
+                        <label for="getCardNumber">Card Number</label> 
+                        <input aria-label='card number' 
+                               pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}$"
+                               type="text" class="form-control" id="getCardNumber" name="cardnumber" 
+                               value="1234 5678 9102 3456" required
+                               title="Must be of the format 0000 0000 0000 0000"
+                               >
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="getCardCVC">CVC</label> 
+                        <input type="password" 
+                               pattern="[0-9]{3}$"
+                               class="form-control" id="getCardNumber" name="cardnumber"  required
+                               title="CVC must be exactly 3 digits">
+                    </div>
+                    </div>
+                </fieldset>    
+                <div class="alert alert-success d-none" id="payment-success" role="alert">
+                    Thank you for your purchase. You will receive delivery details via email. Please return to our <a href="shop.html">Shopping Page</a>.
+                </div>
+                <div class="alert alert-danger d-none" id="payment-failure" role="alert">
+                  There seems to be a problem with the card details you entered.
+                </div>                
+                
+                <input type='submit' class="btn btn-secondary" id="buy-button" value="Buy Now">
+              </div>
+            </form>
+
+              
+        </div> 
+    </div>   
+    
+
+    
+</main>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="custom-js/custom-min.js"></script>   
+    
+</body>
+</html>
+
+
+

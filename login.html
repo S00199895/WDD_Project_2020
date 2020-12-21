@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Login to your account">
+  <meta name="author" content="Mark Curran">
+  <title>Registration Form Lab 5</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom-min.css" rel="stylesheet">    
+</head>
+<body class="bgCover">
+<main class="container">
+
+<nav role="navigation" class="navbar navbar-expand-lg navbar-blue bg-dark loginStyle">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link " href="index.html">Home </a>
+      <a class="nav-item nav-link" href="#">About</a>
+      <a class="nav-item nav-link active" href="shop.html">Shop<span class="sr-only">(current)</span></a>
+    </div>
+  </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-secondary"  id="loginlogout" href="#">Login</button>
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+      <a class="dropdown-item" href="userdetails.html">User Details</a>
+
+    </div>
+    </div>
+  
+     
+      
+    <div class="btn-toolbar">
+        <a class="nav-item nav-link" href="checkout.html">
+        <button type="button" class="btn btn-secondary ml-2">
+          Checkout <span class="badge badge-light" id="checkout"></span>
+        </button>
+        </a>
+    </div> 
+</nav>    
+    
+    <h1 class="text-white">Login</h1>
+    
+    <div class="card bg-secondary text-white rounded w-50 mx-auto loginStyle">
+    <div class="row">    
+        <div class="col-sm col-md-6 mx-auto"> 
+            <div class="alert alert-danger d-none" role="alert" id="loginerror">The username or password you entered is incorrect. <a href="">Forgot your password?</a></div>    
+            <form name="login" action="" method="get" class="form-signin mx-auto">
+                <div class="form-group p-3">
+                    <label for="getEmail"><h3>Email address</h3></label>
+                    <input type="email" class="form-control" id="getEmail" name="email" value="nissa@zendikar.com" required>
+                </div>
+                <div class="form-group p-3">
+                    <label for="getPassword1"><h3>Password</h3></label> 
+                    <input type="password" class="form-control" id="getPassword1" name="password" value="password" required>
+                </div>    
+                <div class="text-center">
+                <input type='submit' class="btn btn-dark" value="Login">
+                                <p> <a href="#" class="text-white">Need to Register?</a></p>
+
+                </div>
+            </form>
+
+        </div> 
+    </div>   
+    </div>
+
+    
+</main>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="custom-js/custom-min.js"></script>   
+    
+</body>
+</html>
+
+
+

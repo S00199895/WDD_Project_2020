@@ -1,0 +1,69 @@
+$jumbo-color1: #ffbf00;
+$jumbo-shadow: #ff8800;
+
+@mixin bgImageLogin {
+    background-image: url(../images/bgCover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+h1 { 
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.subheading {
+    letter-spacing: 5px;
+    color: #c4c4c4;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bg-secondary {
+    background-color: #7e97bd;
+}
+
+#newsDiv {
+    margin-top: 30px;
+    border-top: solid 3px white;
+}
+
+.newsJum {
+    border-radius: none;
+    background-color: #bee4ed;
+    margin: 10px;
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumboDesc {
+    border-bottom: solid 3px $jumbo-color1;
+    padding: 5px;
+    clear: both;
+    box-shadow: 0px 1px 0px $jumbo-shadow;
+}
+
+.figure-caption {
+    text-decoration: underline;
+    color: dimgray;
+    
+}
+
+.highlightBox {
+    border: solid 1px gray;
+}
+
+.bgCover {
+    @include bgImageLogin;
+}
+
+.loginStyle {
+    opacity: 90%;
+}
